@@ -21,12 +21,11 @@
     </form>
          
 </div>
-        
-    <button ng-click="clearCompleted()" class="btn-clear">Clear Completed </button>
         <ul>
             <li ng-repeat="todo in todos">
                 <input type="checkbox" ng-model="todo.done"/>
                 <span ng-class="{'done':todo.done}">{{todo.title}}</span> 
+                <button ng-click="deleteTodo($index)">Delete</button>
             </li>
         </ul> 
 </div>         
@@ -42,13 +41,12 @@
     $scope.addTodo = function(){
         $scope.todos.push({'title':$scope.newTodo,'done':false})
         $scope.newTodo=''
-    }
-    $scope.clearCompleted = function(){
-        $scope.todos = $scope.todos.filter(function(item){
-            return !item.done
-        })        
-    }
- }])      
+    };
+   
+    $scope.deleteTodo = function(){
+        $scope.todos.splice(this.$index, 1); 
+    };
+}])      
 </script>   
      
 </body>     

@@ -46,15 +46,3 @@ h1 {font-family:Lobster,
 	border-bottom: 1px solid #A5A5A5;
 	text-shadow: 1px 1px #FAFAFA;}
 
-.btn-clear {
-    width: 150px;
-	height: 25px;
-	padding: 0 0 1px;
-	font: 16px "Trebuchet MS", Tahoma, Arial, sans-serif;
-    border-radius: 3px;
-	color:darkgrey;
-	border: 1px solid #BBB;
-	border-top: 1px solid #D0D0D0;
-	border-bottom: 1px solid #A5A5A5;
-	text-shadow: 1px 1px #FAFAFA;
-    background: #f1f1f1; }
